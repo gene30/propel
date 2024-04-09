@@ -12,7 +12,7 @@ import (
 type post struct {
 	Title     string `csv:"title"`
 	Author    string `csv:"author"`
-	Subreddit string `csv:"subreddit"` // Added to capture the subreddit name
+	Subreddit string `csv:"subreddit"`
 }
 
 func main() {
@@ -80,18 +80,26 @@ func csvit(posts []post) {
 	j := csv.NewWriter(os.Stdout)
 	defer j.Flush()
 
-	if err := j.Write([]string{"title", "author"}); err != nil {
+	if err := j.Write([]string{}); err != nil {
 		debug(err.Error())
 		return
 	}
 
 	for _, p := range posts {
 		record := []string{p.Title, p.Author}
-		if err := j.Write(record); err != nil {
-			debug(err.Error())
-			return
-		}
+		supurb(record)
 	}
+}
 
-	fmt.Println("Posts written to CSV successfully!")
+func supurb(message []string) {
+	f, err := os.OpenFile("result.log",
+		os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+	if err != nil {
+		debug(err.Error())
+		return
+	}
+	defer f.Close()
+
+	logger := log.New(f, "Version 1.1b ", log.LstdFlags)
+	logger.Println(message)
 }
