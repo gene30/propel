@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/csv"
 	"fmt"
 	"log"
 	"os"
@@ -8,26 +9,58 @@ import (
 	"github.com/gocolly/colly"
 )
 
+type post struct {
+	Title     string `csv:"title"`
+	Author    string `csv:"author"`
+	Subreddit string `csv:"subreddit"` // Added to capture the subreddit name
+}
+
 func main() {
 	debug("Propel Launched.")
+
+	// Read subreddit name from "website.txt"
 	cheese, err := os.ReadFile("website.txt")
-	final := "https://old.reddit.com/r/" + string(cheese)
-	debug(final)
 	if err != nil {
 		debug(err.Error())
+		return
 	}
+	subreddit := string(cheese)
+
+	// Construct the complete URL
+	final := "https://old.reddit.com/r/" + subreddit + "/new"
+
+	debug(final)
+
 	c := colly.NewCollector()
 	colly.AllowedDomains("old.reddit.com")
+
+	var posts []post
+
 	c.OnHTML("div.top-matter", func(h *colly.HTMLElement) {
+		title := h.ChildText("a[tabindex]")
+		p := post{
+			Title:     title,
+			Subreddit: subreddit,
+		}
 
-		fmt.Println("title:", h.ChildText("a[tabindex]"))
+		if author := h.ChildAttr("a[tabindex]", "href"); author != "" {
+			p.Author = author
+		}
+
+		posts = append(posts, p)
 	})
-	c.OnHTML("p.tagline", func(h *colly.HTMLElement) {
 
-		fmt.Println("author:", h.ChildText("a[href]"))
+	c.OnRequest(func(r *colly.Request) {
+		fmt.Println("Visiting:", r.URL)
 	})
 
-	c.Visit(final)
+	err = c.Visit(final)
+	if err != nil {
+		debug(err.Error())
+		return
+	}
+
+	csvit(posts)
 }
 
 func debug(message string) {
@@ -35,9 +68,30 @@ func debug(message string) {
 		os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
 	if err != nil {
 		debug(err.Error())
+		return
 	}
 	defer f.Close()
 
-	logger := log.New(f, "Version 1.0b ", log.LstdFlags)
+	logger := log.New(f, "Version 1.1b ", log.LstdFlags)
 	logger.Println(message)
+}
+
+func csvit(posts []post) {
+	j := csv.NewWriter(os.Stdout)
+	defer j.Flush()
+
+	if err := j.Write([]string{"title", "author"}); err != nil {
+		debug(err.Error())
+		return
+	}
+
+	for _, p := range posts {
+		record := []string{p.Title, p.Author}
+		if err := j.Write(record); err != nil {
+			debug(err.Error())
+			return
+		}
+	}
+
+	fmt.Println("Posts written to CSV successfully!")
 }
