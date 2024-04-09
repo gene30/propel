@@ -9,7 +9,6 @@ import (
 )
 
 func main() {
-	fmt.Println("Propel Launched")
 	debug("Propel Launched.")
 	cheese, err := os.ReadFile("website.txt")
 	final := "https://old.reddit.com/r/" + string(cheese)
