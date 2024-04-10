@@ -18,7 +18,6 @@ type post struct {
 func main() {
 	debug("Propel Launched.")
 
-	// Read subreddit name from "website.txt"
 	cheese, err := os.ReadFile("website.txt")
 	if err != nil {
 		debug(err.Error())
@@ -26,7 +25,6 @@ func main() {
 	}
 	subreddit := string(cheese)
 
-	// Construct the complete URL
 	final := "https://old.reddit.com/r/" + subreddit + "/new"
 
 	debug(final)
@@ -100,6 +98,6 @@ func supurb(message []string) {
 	}
 	defer f.Close()
 
-	logger := log.New(f, "Version 1.1b ", log.LstdFlags)
+	logger := log.New(f, "", log.Flags())
 	logger.Println(message)
 }
