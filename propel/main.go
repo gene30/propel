@@ -84,6 +84,6 @@ func debug(message string) {
 	}
 	defer f.Close()
 
-	logger := log.New(f, "Version 1.2 ", log.LstdFlags)
+	logger := log.New(f, "Version 1.3 ", log.LstdFlags)
 	logger.Println(message)
 }

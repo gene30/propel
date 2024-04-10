@@ -1,127 +1,127 @@
 [
   {
-    "title": "What makes some people value the lives of small creatures (like mice) less than the lives of big ones (like horses)?",
-    "author": "old.reddit.com/r/AskReddit/comments/1c099m0/what_makes_some_people_value_the_lives_of_small/",
-    "subreddit": "askreddit"
+    "title": "Databases or maps",
+    "author": "old.reddit.com/r/golang/comments/1c04bfy/databases_or_maps/",
+    "subreddit": "golang"
   },
   {
-    "title": "What are some good “trivia night” facts to know?",
-    "author": "old.reddit.com/r/AskReddit/comments/1c099k0/what_are_some_good_trivia_night_facts_to_know/",
-    "subreddit": "askreddit"
+    "title": "How to use context implicitly in Go?",
+    "author": "old.reddit.com/r/golang/comments/1c03tz6/how_to_use_context_implicitly_in_go/",
+    "subreddit": "golang"
   },
   {
-    "title": "what has been one of your favorite quotes recently?",
-    "author": "old.reddit.com/r/AskReddit/comments/1c099eu/what_has_been_one_of_your_favorite_quotes_recently/",
-    "subreddit": "askreddit"
+    "title": "How to streaming data from specific source to specific clients.",
+    "author": "old.reddit.com/r/golang/comments/1c02u45/how_to_streaming_data_from_specific_source_to/",
+    "subreddit": "golang"
   },
   {
-    "title": "Dear Reddit, what happened to Arrid XX Extra Extra Dry Solid (regular) Antiperspirant Deodorant?",
-    "author": "old.reddit.com/r/AskReddit/comments/1c0994l/dear_reddit_what_happened_to_arrid_xx_extra_extra/",
-    "subreddit": "askreddit"
+    "title": "Has anybody read the book \"Writing an Interpreter in Go\"?",
+    "author": "old.reddit.com/r/golang/comments/1c01fsv/has_anybody_read_the_book_writing_an_interpreter/",
+    "subreddit": "golang"
   },
   {
-    "title": "What are your greatest movie ideas?",
-    "author": "old.reddit.com/r/AskReddit/comments/1c098xw/what_are_your_greatest_movie_ideas/",
-    "subreddit": "askreddit"
+    "title": "Go Developer Survey 2024 H1 Results",
+    "author": "old.reddit.com/ttps://go.dev/blog/survey2024-h1-results",
+    "subreddit": "golang"
   },
   {
-    "title": "What risky decision did you make that turned out better than you thought it would?",
-    "author": "old.reddit.com/r/AskReddit/comments/1c098dh/what_risky_decision_did_you_make_that_turned_out/",
-    "subreddit": "askreddit"
+    "title": "Go monoliths viable?",
+    "author": "old.reddit.com/r/golang/comments/1bzwtkk/go_monoliths_viable/",
+    "subreddit": "golang"
   },
   {
-    "title": "What’s your favorite thing about the United States?",
-    "author": "old.reddit.com/r/AskReddit/comments/1c09801/whats_your_favorite_thing_about_the_united_states/",
-    "subreddit": "askreddit"
+    "title": "Gorabbit: A new RabbitMQ library in Go",
+    "author": "old.reddit.com/r/golang/comments/1bzw47a/gorabbit_a_new_rabbitmq_library_in_go/",
+    "subreddit": "golang"
   },
   {
-    "title": "What is one thing that makes you different from everybody else?",
-    "author": "old.reddit.com/r/AskReddit/comments/1c097oz/what_is_one_thing_that_makes_you_different_from/",
-    "subreddit": "askreddit"
+    "title": "Command to check a go package for syntactic and semantic errors",
+    "author": "old.reddit.com/r/golang/comments/1bzw3xo/command_to_check_a_go_package_for_syntactic_and/",
+    "subreddit": "golang"
   },
   {
-    "title": "how do you feel about mike lindell as a presidential candidate?",
-    "author": "old.reddit.com/r/AskReddit/comments/1c097n9/how_do_you_feel_about_mike_lindell_as_a/",
-    "subreddit": "askreddit"
+    "title": "Please help me understand why methods aren't encapsulated on objects they are defined for like other languages. It makes things unreadable in a GO which if you ask me is ironical. Or, is this a skill issue?",
+    "author": "old.reddit.com/r/golang/comments/1bzvmuz/please_help_me_understand_why_methods_arent/",
+    "subreddit": "golang"
   },
   {
-    "title": "What gets rid of bear mace?",
-    "author": "old.reddit.com/r/AskReddit/comments/1c097cg/what_gets_rid_of_bear_mace/",
-    "subreddit": "askreddit"
+    "title": "Using Tailscale for authentication in internal tools, in Go (HTTP and gRPC)",
+    "author": "old.reddit.com/r/golang/comments/1bzv1jb/using_tailscale_for_authentication_in_internal/",
+    "subreddit": "golang"
   },
   {
-    "title": "(: How was your day?",
-    "author": "old.reddit.com/r/AskReddit/comments/1c096j8/how_was_your_day/",
-    "subreddit": "askreddit"
+    "title": "Support the Open-Source Project!",
+    "author": "old.reddit.com/r/golang/comments/1bzto8f/support_the_opensource_project/",
+    "subreddit": "golang"
   },
   {
-    "title": "What are the greatest works of fiction of all time (movies, TV shows, video games, novels, comics etc)?",
-    "author": "old.reddit.com/r/AskReddit/comments/1c096bl/what_are_the_greatest_works_of_fiction_of_all/",
-    "subreddit": "askreddit"
+    "title": "What's the relevance of this syntax ?",
+    "author": "old.reddit.com/r/golang/comments/1bzsbf5/whats_the_relevance_of_this_syntax/",
+    "subreddit": "golang"
   },
   {
-    "title": "You have the ability to make one item of junk food the healthiest food item in the world while tasting the same. What are you choosing?",
-    "author": "old.reddit.com/r/AskReddit/comments/1c095qo/you_have_the_ability_to_make_one_item_of_junk/",
-    "subreddit": "askreddit"
+    "title": "No results from function: Return empty slice or nil?",
+    "author": "old.reddit.com/r/golang/comments/1bzrzx2/no_results_from_function_return_empty_slice_or_nil/",
+    "subreddit": "golang"
   },
   {
-    "title": "If we're able to affordably reverse aging, how will society change?",
-    "author": "old.reddit.com/r/AskReddit/comments/1c095ki/if_were_able_to_affordably_reverse_aging_how_will/",
-    "subreddit": "askreddit"
+    "title": "Learning Go - Please help me understand a middleware pattern.",
+    "author": "old.reddit.com/r/golang/comments/1bzqes5/learning_go_please_help_me_understand_a/",
+    "subreddit": "golang"
   },
   {
-    "title": "What's something you wouldn't even do for $1B?",
-    "author": "old.reddit.com/r/AskReddit/comments/1c095jz/whats_something_you_wouldnt_even_do_for_1b/",
-    "subreddit": "askreddit"
+    "title": "Problem in import local files to another",
+    "author": "old.reddit.com/r/golang/comments/1bzp5xv/problem_in_import_local_files_to_another/",
+    "subreddit": "golang"
   },
   {
-    "title": "How hard is it control one's Libido During the Co-Ed Uni Days for boys or girls ? Especially in the environment where relationships is a common sight and one thinks the influence got them ?",
-    "author": "old.reddit.com/r/AskReddit/comments/1c094rv/how_hard_is_it_control_ones_libido_during_the/",
-    "subreddit": "askreddit"
+    "title": "I heard a comment saying Go is simple but you need to have lots of general cs knowledge",
+    "author": "old.reddit.com/r/golang/comments/1bzoxvs/i_heard_a_comment_saying_go_is_simple_but_you/",
+    "subreddit": "golang"
   },
   {
-    "title": "What is the worst drug you've ever seen?",
-    "author": "old.reddit.com/r/AskReddit/comments/1c094rq/what_is_the_worst_drug_youve_ever_seen/",
-    "subreddit": "askreddit"
+    "title": "Implementing a ring buffer using channels for SSE",
+    "author": "old.reddit.com/r/golang/comments/1bzov26/implementing_a_ring_buffer_using_channels_for_sse/",
+    "subreddit": "golang"
   },
   {
-    "title": "If you could change one thing in the world, what would it be and why?",
-    "author": "old.reddit.com/r/AskReddit/comments/1c094dx/if_you_could_change_one_thing_in_the_world_what/",
-    "subreddit": "askreddit"
+    "title": "Update regarding the post for Mastering Go- Fourth Edition Book",
+    "author": "old.reddit.com/r/golang/comments/1bzo08l/update_regarding_the_post_for_mastering_go_fourth/",
+    "subreddit": "golang"
   },
   {
-    "title": "What is your favorite mushroom?",
-    "author": "old.reddit.com/r/AskReddit/comments/1c093qz/what_is_your_favorite_mushroom/",
-    "subreddit": "askreddit"
+    "title": "What is wrong with this code? I am trying to define a function that expects an interface, and another struct that would implicitly implement it, but compiler says signature doesn't match.",
+    "author": "old.reddit.com/r/golang/comments/1bznpfh/what_is_wrong_with_this_code_i_am_trying_to/",
+    "subreddit": "golang"
   },
   {
-    "title": "Which \"E for everyone\" video game character is more likely to swear?",
-    "author": "old.reddit.com/r/AskReddit/comments/1c092vr/which_e_for_everyone_video_game_character_is_more/",
-    "subreddit": "askreddit"
+    "title": "templ vscode issue",
+    "author": "old.reddit.com/r/golang/comments/1bzn7o3/templ_vscode_issue/",
+    "subreddit": "golang"
   },
   {
-    "title": "What is your most used emoji?",
-    "author": "old.reddit.com/r/AskReddit/comments/1c092o6/what_is_your_most_used_emoji/",
-    "subreddit": "askreddit"
+    "title": "What is the official Google way of golang TDD?",
+    "author": "old.reddit.com/r/golang/comments/1bzihsy/what_is_the_official_google_way_of_golang_tdd/",
+    "subreddit": "golang"
   },
   {
-    "title": "What does your inner child want?",
-    "author": "old.reddit.com/r/AskReddit/comments/1c090sg/what_does_your_inner_child_want/",
-    "subreddit": "askreddit"
+    "title": "Re4 pick a gun written in Go!",
+    "author": "old.reddit.com/r/golang/comments/1bzigvc/re4_pick_a_gun_written_in_go/",
+    "subreddit": "golang"
   },
   {
-    "title": "Bipolar sufferers of Reddit, how are you today?",
-    "author": "old.reddit.com/r/AskReddit/comments/1c08zhi/bipolar_sufferers_of_reddit_how_are_you_today/",
-    "subreddit": "askreddit"
+    "title": "Functional vs Imperative benchmark",
+    "author": "old.reddit.com/r/golang/comments/1bzgry4/functional_vs_imperative_benchmark/",
+    "subreddit": "golang"
   },
   {
-    "title": "People who got married to some one after meeting them for a short period of time how did it end up?",
-    "author": "old.reddit.com/r/AskReddit/comments/1c08ymg/people_who_got_married_to_some_one_after_meeting/",
-    "subreddit": "askreddit"
+    "title": "Java background - Getting into Golang",
+    "author": "old.reddit.com/r/golang/comments/1bzgqbz/java_background_getting_into_golang/",
+    "subreddit": "golang"
   },
   {
-    "title": "If you put together a music playlist to represent your life, what are the top five songs?",
-    "author": "old.reddit.com/r/AskReddit/comments/1c08yhn/if_you_put_together_a_music_playlist_to_represent/",
-    "subreddit": "askreddit"
+    "title": "What architecture has been the best for you",
+    "author": "old.reddit.com/r/golang/comments/1bzg8gi/what_architecture_has_been_the_best_for_you/",
+    "subreddit": "golang"
   }
 ]
