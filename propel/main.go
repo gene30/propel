@@ -1,7 +1,7 @@
 package main
 
 import (
-	"encoding/csv"
+	"encoding/json"
 	"fmt"
 	"log"
 	"os"
@@ -10,9 +10,9 @@ import (
 )
 
 type post struct {
-	Title     string `csv:"title"`
-	Author    string `csv:"author"`
-	Subreddit string `csv:"subreddit"`
+	Title     string `json:"title"`
+	Author    string `json:"author,omitempty"`
+	Subreddit string `json:"subreddit"`
 }
 
 func main() {
@@ -42,7 +42,7 @@ func main() {
 		}
 
 		if author := h.ChildAttr("a[tabindex]", "href"); author != "" {
-			p.Author = author
+			p.Author = "old.reddit.com/" + author[1:]
 		}
 
 		posts = append(posts, p)
@@ -58,7 +58,21 @@ func main() {
 		return
 	}
 
-	csvit(posts)
+	jwriter, err := os.Create("posts.json")
+	if err != nil {
+		debug(err.Error())
+		return
+	}
+	defer jwriter.Close()
+
+	encoder := json.NewEncoder(jwriter)
+	encoder.SetIndent("", "  ")
+	if err := encoder.Encode(posts); err != nil {
+		debug(err.Error())
+		return
+	}
+
+	fmt.Println("propel wrote to json")
 }
 
 func debug(message string) {
@@ -70,34 +84,6 @@ func debug(message string) {
 	}
 	defer f.Close()
 
-	logger := log.New(f, "Version 1.1b ", log.LstdFlags)
-	logger.Println(message)
-}
-
-func csvit(posts []post) {
-	j := csv.NewWriter(os.Stdout)
-	defer j.Flush()
-
-	if err := j.Write([]string{}); err != nil {
-		debug(err.Error())
-		return
-	}
-
-	for _, p := range posts {
-		record := []string{p.Title, p.Author}
-		supurb(record)
-	}
-}
-
-func supurb(message []string) {
-	f, err := os.OpenFile("result.log",
-		os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
-	if err != nil {
-		debug(err.Error())
-		return
-	}
-	defer f.Close()
-
-	logger := log.New(f, "", log.Flags())
+	logger := log.New(f, "Version 1.2 ", log.LstdFlags)
 	logger.Println(message)
 }
